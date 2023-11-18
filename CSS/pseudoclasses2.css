@@ -1,0 +1,10 @@
+li:hover{
+    background-color: hsl(60, 100%, 50%);
+}
+li:not(:hover){
+    background-color: hsl(0, 0%, 50%);
+} 
+
+/* li:nth-child(){
+    background-color: hsl(60, 100%, 50%);
+} */

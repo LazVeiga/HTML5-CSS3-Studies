@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(37, 37, 37);
+}
+#car{
+    width: 200px;
+    animation-name: slideRight;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+}
+#smoke{
+    width: 200px;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    animation-name: slideRight;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: ease-in;
+    opacity: 1;
+}
+@keyframes slideLeft{
+    from{transform: translateX(300%)}
+}
+@keyframes slideRight{
+    to{transform: translateX(1000%)}
+}
+@keyframes slideUp{
+    from{transform: translateY(300%)}
+}
+@keyframes slideDown{
+    to{transform: translateY(300%)}
+}
+@keyframes rotate{
+    100%{transform: rotateX(360deg)}
+}
+@keyframes grow{
+    50%{transform: scale(2, 2)}
+}
+@keyframes shrink{
+    50%{transform: scale(0.5, 0.5)}
+}
+@keyframes fadeOut{
+    100%{opacity: 0;}
+}
+@keyframes colorChange{
+    0%{background-color: red;}
+    20%{background-color: orange;}
+    40%{background-color: yellow;}
+    60%{background-color: greenyellow;}
+    80%{background-color: blue;}
+    100%{background-color: purple;}
+}
+@keyframes glow{
+    50%{box-shadow: 0px 0px 50px blue;}
+}

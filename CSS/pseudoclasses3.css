@@ -1,0 +1,8 @@
+#greeting p{
+    background-color: hsl(195, 53%, 79%);
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}

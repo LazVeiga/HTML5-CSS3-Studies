@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100&family=Quicksand:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100&family=Roboto&family=Rubik+Mono+One&display=swap');
+
+* {
+    text-decoration: none;
+    /** Erase all the text decorations **/
+}
+
+body {
+    height: 100%;
+    background-image: url("../images/9655b7d1-d3bd-4bd9-b891-ba77be8ddd89.jpeg");
+    /** Background image **/
+    background-size: cover;
+    /** Background image will cover the website size **/
+}
+
+#songName {
+    font-family: "Rubik Mono One", monospace;
+    /** Font of the song title on the right top **/
+    color: wheat;
+    /** Color of the font is wheat **/
+    text-transform: uppercase;
+    /** Song title is uppercased **/
+    font-size: 1.5em;
+    /** Font size is 24px **/
+    letter-spacing: 0.1em;
+    /** The space between letters is 1.6 pixels **/
+    font-weight: 400;
+    /** Font boldness is normal **/
+}
+
+#artistName {
+    font-family: "Poppins", sans-serif;
+    /** Font of the artist name on the right top **/
+    font-size: 1em;
+    /** Font size is 16px **/
+    color: wheat;
+    /** Color of the font is wheat **/
+}
+
+#lyrics {
+    display: flex;
+    text-align: justify;
+    /** Each line of lyrics are aligned with both margins **/
+    margin-left: 50px;
+    /** Margin of lyrics is set to 50px from left **/
+    font-family: "quicksand", sans-serif;
+    /** Font of lyrics **/
+    color: rgb(250, 210, 136);
+    /** Color of font is light orange **/
+}
+
+.image {
+    float: right;
+    /** Artist image is floating on right top **/
+    margin-left: 20px;
+    /** Margin of artist image is set to 20px from left **/
+    margin-right: 10px;
+    /** Margin of artist image is set to 10px from right **/
+}
+
+.image:hover {
+    box-shadow: 0px 0px 35px wheat;
+    /** Hovering on the right top image changes its color **/
+    animation-name: rotate;
+    /** Hovering the mouse on the right top image rotates it **/
+    animation-duration: 1.5s;
+    /** Animation lasts 1.5 seconds **/
+}
+
+.button {
+    font-family: "Poppins", sans-serif;
+    /** Font of button **/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 33vh;
+    border: 3px solid wheat;
+    /** Button's border **/
+    background: rgba(245, 222, 179, 0);
+    /** Button's background is transparent **/
+    color: wheat;
+    /** button's text color is wheat **/
+    text-transform: uppercase;
+    /** Button's text is uppercased **/
+    font-size: 1.5em;
+    /** Font size is 24px**/
+    letter-spacing: 0.1em;
+    /** The space between letters is 1.6 pixels **/
+    font-weight: 400;
+    /** Font boldness is normal **/
+    padding: 10px 30px;
+    /** The padding of the button is set to top and bottom: 10px, right and left: 30px **/
+}
+
+.button:hover {
+    border-radius: var(--clr);
+    /** Enlight the border color **/
+    letter-spacing: 0.25em;
+    /** Spaces the letters on the button **/
+    box-shadow: 0px 0px 35px var(--clr);
+    /** Creates a neon effect around the button **/
+    transition: 0.5s;
+    /** Animation trasitions lasts 0.5 seconds **/
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotateY(360deg)
+    }
+}
+
+.audio {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+    /** Margin of music player is set to 10px from right **/
+    position: relative;
+    bottom: 735px;
+    /** Position is raised at 735px **/
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgba(110, 154, 190, 0.712);
+    /** Color of music played **/
+}
+
+.ftrIcons {
+    display: inline-block;
+    justify-content: center;
+}
+
+.ftrIcons a {
+    margin-right: 5px;
+}
+
+.fa-brands.fa-instagram.fa-lg {
+    color: hsl(194, 77%, 83%);
+    /** Color of instagram icon on the footer **/
+}
+
+.fa-brands.fa-instagram.fa-lg:hover {
+    color: hsl(194, 30%, 62%);
+    /** Changes the color to a darker tone of the origin **/
+}
+
+.fa-brands.fa-github.fa-lg {
+    color: white;
+    /** Color of github icon on the footer **/
+}
+
+.fa-brands.fa-github.fa-lg:hover {
+    color: rgb(184, 183, 183);
+    /** Changes the color to a darker tone of the origin **/
+}
+
+footer {
+    display: block;
+    clear: both;
+    background-color: rgba(245, 222, 179, 0.514);
+    /** Footer color opacity is a little low **/
+    text-align: center;
+    padding: 20px;
+    /** The padding of the button is set to 20px **/
+    border-radius: 20px;
+    margin-bottom: 10px;
+    /** Margin of the button is set to 10px from bottom **/
+    margin-left: 10px;
+    /** Margin of the button is set to 10px from left **/
+    margin-right: 10px;
+    /** Margin of the button is set to 10px from right **/
+}
+
+.author {
+    font-family: "Poppins", sans-serif;
+    /** Font of the text of the footer **/
+    color: hsl(194, 30%, 62%);
+    /** Color of the font **/
+    text-transform: uppercase;
+    /** Font is uppercased **/
+    font-size: 1.2em;
+    /** Font size is 19px **/
+    letter-spacing: 0.1em;
+    /** The space between letters is 1.6 pixels **/
+    font-weight: bolder;
+    /** Font weight is bold **/
+}
+
+@media screen and (max-width: 800px) {
+    section {
+        width: 100%;
+    }
+
+    .button {
+        font-size: 1.3em;
+        /** Font size is 20.8px when the size of screen is lower than 800px **/
+        padding: 10px 15px;
+        /** The padding of the button is set to top and bottom: 10px, right and left: 15px **/
+    }
+
+    audio {
+        display: none;
+        /** Music player doesn't display when the size of screen is lower than 800px **/
+    }
+}

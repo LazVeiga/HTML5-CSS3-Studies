@@ -1,0 +1,16 @@
+.container{
+    background-color: hsl(330, 100%, 71%);
+    height: 100vh;
+}
+.box{
+    background-color: rgb(240, 248, 255);
+    border: 2px solid;
+    padding: 25px;
+    box-sizing: border-box;
+    height: auto;
+    width: 50%;
+    float: left;
+    text-align: center;
+
+    min-height: 50%;
+}
